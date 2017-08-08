@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #e7e7e7;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #1f2126;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  font-family: arial;
+  font-size: 1.2em;
+  line-height: 50px;
+  height: 50px;
+  border-bottom: none;
+  width: 120px;
+  display: inline-block;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+
+  /* mobile portrait */
+
+  .nav li {
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 100%;
+  }
+
+  .nav a {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* mobile landscrape or tablet */
+  .nav li {
+    width: 50%;
+    display: block;
+  }
+}
